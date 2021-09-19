@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: thanos-object-storage
+type: Opaque
+stringData:
+  thanos.yaml: |
+    type: s3
+    config:
+      bucket: grafana-1803
+      endpoint: s3.amazonaws.com
+      insecure: false
+      access_key: AKIAYNLKQBJ2HV35S7G4
+      secret_key: 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
+
